@@ -24,9 +24,14 @@
   <i>Where I keep some old projects</i>
 </p>
 
+> <pre align="center">
+> Any code here is no longer maintained.
+> If you wanna talk something about any of these projects, feel free to open an issue.
+> </pre>
+
 ## 📖 About
 
-This repository is used to store any old projects that I no longer maintain. Usually, these projects are abandoned because I don't like the results, they are too old or they were used to learn something. If you wanna talk something about any of these projects is needed, feel free to open an issue.
+This repository is used to store any old projects that I no longer maintain. Usually, these projects are abandoned because I don't like the results, they are too old or they were used to learn something.
 
 ## 📎 Projects
 
