@@ -5,14 +5,14 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hazork/flappy.git"
+    "url": "git+https://github.com/arthurfiorette/code-vault.git"
   },
   "author": "Hazork",
   "license": "GPL-3.0-only",
   "bugs": {
-    "url": "https://github.com/Hazork/flappy/issues"
+    "url": "https://github.com/arthurfiorette/code-vault/issues"
   },
-  "homepage": "https://github.com/Hazork/flappy#readme",
+  "homepage": "https://github.com/arthurfiorette/code-vault#readme",
   "dependencies": {
     "typescript": "^4.1.3"
   }
