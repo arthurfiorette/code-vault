@@ -26,7 +26,7 @@
 
 .button.operation {
   background-color: hsl(24, 95%, 59%);
-  color: #FFF;
+  color: #fff;
 }
 
 .button.operation:active {

@@ -9,7 +9,7 @@ const initialState = {
   clearDisplay: false,
   operation: null,
   values: [0, 0],
-  index: 0
+  index: 0,
 };
 
 class Calculator extends Component {
@@ -37,7 +37,9 @@ class Calculator extends Component {
     } else {
       try {
         // eslint-disable-next-line
-        state.values[0] = eval(`${state.values[0]} ${state.operation} ${state.values[1]}`);
+        state.values[0] = eval(
+          `${state.values[0]} ${state.operation} ${state.values[1]}`
+        );
       } catch (_) {
         /* just ignore */
       }
@@ -83,7 +85,7 @@ class Calculator extends Component {
       state: { display },
       clearMemory,
       setOperation,
-      addDigit
+      addDigit,
     } = this;
 
     return (
@@ -105,7 +107,11 @@ class Calculator extends Component {
         <Button content="+" classes="operation" click={setOperation} />
         <Button content="0" classes="double bottomLeft" click={addDigit} />
         <Button content="." classes="" click={addDigit} />
-        <Button content="=" classes="operation bottomRight" click={setOperation} />
+        <Button
+          content="="
+          classes="operation bottomRight"
+          click={setOperation}
+        />
       </div>
     );
   }
