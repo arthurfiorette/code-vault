@@ -1,6 +1,6 @@
 # Flappy Bird
 
-This is a repository created to learn and practice about **TypeScript**, **JavaScript**, **HTML** and **CSS**. 
+This is a repository created to learn and practice about **TypeScript**, **JavaScript**, **HTML** and **CSS**.
 
 #### You can open it clicking [here](public).
 
