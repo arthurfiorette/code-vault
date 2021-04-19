@@ -36,6 +36,7 @@ You can browse to the optimized version of each project from this list, but also
 - [`Flappy Bird`](flappy)
 - [`React Calculator`](react-calculator)
 - [`Adventure Pass`](adventure-pass)
+- [`Bootstrap Gallery`](bootstrap-gallery)
 
 ## 📃 License
 

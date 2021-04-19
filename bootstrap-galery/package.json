@@ -1,0 +1,41 @@
+{
+  "name": "bootstrap-gallery",
+  "version": "1.0.0",
+  "description": "A simple photo gallery project",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Arthur Fiorette",
+  "license": "GPL-3.0-only",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "cross-env NODE_ENV=production webpack"
+  },
+  "homepage": "https://github.com/ArthurFiorette/code-vault#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ArthurFiorette/code-vault.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ArthurFiorette/code-vault/issues"
+  },
+  "devDependencies": {
+    "bootstrap": "4.1.1",
+    "copy-webpack-plugin": "4.5.1",
+    "cross-env": "5.1.5",
+    "css-loader": "0.28.11",
+    "file-loader": "1.1.11",
+    "font-awesome": "4.7.0",
+    "jquery": "3.3.1",
+    "mini-css-extract-plugin": "0.4.0",
+    "node-sass": "4.14.1",
+    "optimize-css-assets-webpack-plugin": "4.0.1",
+    "popper.js": "1.14.3",
+    "postcss-loader": "2.1.5",
+    "sass-loader": "^7.3.1",
+    "style-loader": "0.21.0",
+    "uglifyjs-webpack-plugin": "1.2.5",
+    "webpack": "4.4.0",
+    "webpack-cli": "2.1.3",
+    "webpack-dev-server": "3.1.4"
+  }
+}
