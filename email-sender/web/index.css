@@ -22,7 +22,6 @@ body {
   margin: 7px;
 }
 
-
 form {
   border: 2px solid #f7f3f7;
   border-radius: 5px;
@@ -34,9 +33,10 @@ form div button {
   width: 150px;
 }
 
-form div button:hover, form div button:focus {
+form div button:hover,
+form div button:focus {
   background-color: #252028;
-  color: #c5362b
+  color: #c5362b;
 }
 
 label {
