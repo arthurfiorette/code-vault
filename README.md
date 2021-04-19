@@ -30,7 +30,7 @@ This repository is used to store any old projects that I no longer maintain. Usu
 
 ## 📎 Projects
 
-> _No project has been submitted to this vault yet_
+- [Email Sender](email-sender)
 
 ## 📃 License
 

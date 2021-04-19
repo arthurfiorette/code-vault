@@ -1,0 +1,1 @@
+docker-compose exec db psql -U postgres -d emails_database -c 'select * from emails'
