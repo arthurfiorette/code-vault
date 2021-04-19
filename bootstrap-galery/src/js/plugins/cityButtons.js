@@ -16,17 +16,17 @@ function filterByCity(name) {
   });
 }
 
-$.fn.cityButtons = function() {
+$.fn.cityButtons = function () {
   const cities = new Set();
   $('[bg-city]').each((_, e) => {
     cities.add($(e).attr('bg-city'));
   });
 
   const buildBtn = (html) =>
-    $('<button>')
-      .addClass(['btn', 'btn-info'])
-      .html(html);
-  const btns = Array.from(cities).map((city) => buildBtn(city).on('click', () => filterByCity(city)));
+    $('<button>').addClass(['btn', 'btn-info']).html(html);
+  const btns = Array.from(cities).map((city) =>
+    buildBtn(city).on('click', () => filterByCity(city))
+  );
   const btnAll = buildBtn('Todas');
   btnAll.on('click', () => filterByCity(null));
   btns.push(btnAll);

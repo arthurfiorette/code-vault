@@ -26,7 +26,7 @@ function include(element) {
     },
     error: ({ responseText }) => {
       console.error(responseText);
-    }
+    },
   });
 }
 
