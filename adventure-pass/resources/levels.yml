@@ -1,91 +1,91 @@
 options:
-  level-func: "({level} * 10) + 2 * SQRT({level})"
+  level-func: '({level} * 10) + 2 * SQRT({level})'
 
 levels:
   0:
     icon: DIAMOND_SWORD
-    name: "Nível 1"
-    description: "Description 2"
-    command: "give {player} dirt 52"
+    name: 'Nível 1'
+    description: 'Description 2'
+    command: 'give {player} dirt 52'
   1:
     icon: DIAMOND_SHOVEL
-    name: "GAY"
-    description: "Description 2"
-    command: "say p2"
+    name: 'GAY'
+    description: 'Description 2'
+    command: 'say p2'
   2:
     icon: DIAMOND_AXE
-    name: "Nível 1"
-    description: "Description 2"
-    command: "say p3"
+    name: 'Nível 1'
+    description: 'Description 2'
+    command: 'say p3'
   3:
     icon: DIAMOND_HOE
-    name: "Nível 1"
-    description: "Description 2"
-    command: "say p1"
+    name: 'Nível 1'
+    description: 'Description 2'
+    command: 'say p1'
   4:
     icon: DIAMOND_PICKAXE
-    name: "Nível 1"
-    description: "Description 2"
-    command: "say p2"
+    name: 'Nível 1'
+    description: 'Description 2'
+    command: 'say p2'
   5:
     icon: FLINT_AND_STEEL
-    name: "Nível 1"
-    description: "Description 2"
-    command: "say p3"
+    name: 'Nível 1'
+    description: 'Description 2'
+    command: 'say p3'
   6:
     icon: WOODEN_SWORD
-    name: "Nível 1"
-    description: "Description 2"
-    command: "say p1"
+    name: 'Nível 1'
+    description: 'Description 2'
+    command: 'say p1'
   7:
     icon: WOODEN_AXE
-    name: "Nível 1"
-    description: "Description 2"
-    command: "say p2"
+    name: 'Nível 1'
+    description: 'Description 2'
+    command: 'say p2'
   8:
     icon: WOODEN_HOE
-    name: "Nível 1"
-    description: "Description 2"
-    command: "say p3"
+    name: 'Nível 1'
+    description: 'Description 2'
+    command: 'say p3'
   9:
     icon: WOODEN_PICKAXE
-    name: "Nível 1"
-    description: "Description 2"
-    command: "say p1"
+    name: 'Nível 1'
+    description: 'Description 2'
+    command: 'say p1'
   10:
     icon: IRON_SHOVEL
-    name: "Nível 1"
-    description: "Description 2"
-    command: "say p2"
+    name: 'Nível 1'
+    description: 'Description 2'
+    command: 'say p2'
   11:
     icon: IRON_PICKAXE
-    name: "Nível 1"
-    description: "Description 2"
-    command: "say p3"
+    name: 'Nível 1'
+    description: 'Description 2'
+    command: 'say p3'
   12:
     icon: IRON_AXE
-    name: "Nível 1"
-    description: "Description 2"
-    command: "say p1"
+    name: 'Nível 1'
+    description: 'Description 2'
+    command: 'say p1'
   13:
     icon: IRON_SWORD
-    name: "Nível 1"
-    description: "Description 2"
-    command: "say p2"
+    name: 'Nível 1'
+    description: 'Description 2'
+    command: 'say p2'
   14:
     icon: NETHERITE_SWORD
-    name: "Nível 1"
-    description: "Description 2"
-    command: "say p3"
+    name: 'Nível 1'
+    description: 'Description 2'
+    command: 'say p3'
   15:
     icon: NETHERITE_AXE
-    name: "Nível 1"
-    description: "Description 2"
-    command: "say p1"
+    name: 'Nível 1'
+    description: 'Description 2'
+    command: 'say p1'
   16:
     icon: NETHERITE_PICKAXE
-    name: "Nível 1"
-    description: "Description 2"
-    command: "say p2"
+    name: 'Nível 1'
+    description: 'Description 2'
+    command: 'say p2'
   17:
     empty: true

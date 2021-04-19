@@ -1,18 +1,16 @@
 package com.github.hazork.adventurepass.command;
 
 import java.util.Optional;
-
 import org.bukkit.command.CommandSender;
 
 public interface SpigotCommand {
+  void handle(CommandSender sender, String[] arguments, String label);
 
-    void handle(CommandSender sender, String[] arguments, String label);
+  String getName();
 
-    String getName();
+  boolean onlyPlayer();
 
-    boolean onlyPlayer();
-
-    default Optional<String> getPermission() {
-	return Optional.empty();
-    }
+  default Optional<String> getPermission() {
+    return Optional.empty();
+  }
 }
