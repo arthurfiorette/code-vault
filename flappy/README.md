@@ -5,5 +5,5 @@ This is a repository created to learn and practice about **TypeScript**, **JavaS
 #### You can open it clicking [here](public).
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ArthurFiorette/code-vault/main/falppy/.github/images/page.png" alt="Project Preview" />
+  <img src="https://raw.githubusercontent.com/ArthurFiorette/code-vault/main/flappy/.github/images/page.png" alt="Project Preview" />
 </p>
