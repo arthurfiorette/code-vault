@@ -2,13 +2,12 @@ name: TypeScript Services
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 
 jobs:
-
   build:
     runs-on: ubuntu-20.04
     steps:
@@ -19,22 +18,22 @@ jobs:
         uses: actions/setup-node@v2.1.4
         with:
           node-version: 12
-      
+
       - name: Caching Node Modules
         uses: actions/cache@v2
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: | 
+          restore-keys: |
             ${{ runner.os }}-node-
 
       - name: Install NPM Dependencies
         run: npm install
-        
+
       - name: Build TypeScript
         uses: FuLagann/tsc-build-push@v1
         with:
-          user-name: "Hazork"
-          user-email: "arthur.fiorette@gmail.com"
-          message: "Build automática de TS não compilado"
+          user-name: 'Hazork'
+          user-email: 'arthur.fiorette@gmail.com'
+          message: 'Build automática de TS não compilado'
           directories: ./

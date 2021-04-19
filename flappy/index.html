@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Flappy Bird</title>
-    <link rel="icon" href="./public/images/flappy.png">
-    <link rel='stylesheet' href='./public/css/index.css'>
-    <link rel='stylesheet' href='./public/css/game.css'>
-</head>
+    <link rel="icon" href="./public/images/flappy.png" />
+    <link rel="stylesheet" href="./public/css/index.css" />
+    <link rel="stylesheet" href="./public/css/game.css" />
+  </head>
 
-<body class="conteudo">
+  <body class="conteudo">
     <header>
-        <span class="title">Flappy Bird: The Game</span>
-        <span class="volume">
-            Volume: <input type="range" min="0" max="100" value="50" id="volume-bar"
-                oninput="volume = this.value / 100">
-        </span>
-        <span>
-            <a href="https://github.com/Hazork/flappy" target="_blank">
-                <img class="git" src="./public/images/github_icon.png" alt="Github Icon">
-            </a>
-        </span>
+      <span class="title">Flappy Bird: The Game</span>
+      <span class="volume">
+        Volume:
+        <input
+          type="range"
+          min="0"
+          max="100"
+          value="50"
+          id="volume-bar"
+          oninput="volume = this.value / 100"
+        />
+      </span>
+      <span>
+        <a href="https://github.com/Hazork/flappy" target="_blank">
+          <img
+            class="git"
+            src="./public/images/github_icon.png"
+            alt="Github Icon"
+          />
+        </a>
+      </span>
     </header>
     <main>
-        <button id="start-button"></button>
-        <div wm-flappy></div>
+      <button id="start-button"></button>
+      <div wm-flappy></div>
     </main>
     <footer>
-        <span id="best">Best score: <span class="value">0</span> /</span>
-        <span id="last">Last score: <span class="value">0</span> /</span>
-        <span id="plays">Times played: <span class="value">0</span></span>
+      <span id="best">Best score: <span class="value">0</span> /</span>
+      <span id="last">Last score: <span class="value">0</span> /</span>
+      <span id="plays">Times played: <span class="value">0</span></span>
     </footer>
     <script src="./public/js/reloadOnResize.js"></script>
     <script src="./public/js/flappy.js"></script>
-</body>
-
+  </body>
 </html>
