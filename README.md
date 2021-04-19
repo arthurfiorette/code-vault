@@ -30,7 +30,7 @@ This repository is used to store any old projects that I no longer maintain. Usu
 
 ## 📑 Notes
 
- 1. I renamed all **workflows** folders to **_workflows** just to keep any workflows yml file from running
+1.  I renamed all **workflows** folders to **\_workflows** just to keep any workflows yml file from running
 
 ## 📎 Projects
 
