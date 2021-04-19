@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'Pixel';
+    src: url('./../fonts/Pixel.ttf');
+}
+
+main {
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+[wm-flappy] {
+    position: relative;
+    width: 90vw;
+    height: 720px;
+    margin: 15px;
+    background-color: #191c24;
+    box-shadow: 1px 1px 25px #5f85ea;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.passaro {
+    position: absolute;
+    width: 60px;
+    left: calc(50% - 30px);
+}
+
+.par-de-barreiras {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.barreira {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barreira .borda {
+    height: 30px;
+    width: 130px;
+    background: linear-gradient(90deg, #5f85ea, #65a2e9);
+    border: 2px solid #000;
+}
+
+.barreira .corpo {
+    width: 110px;
+    background: linear-gradient(90deg, #5f85ea, #65a2e9);
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
+.progresso {
+    color: #f1edf3;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: Pixel;
+    font-size: 70px;
+    text-shadow: 2px 2px 5px #4e4ea8;
+    z-index: 100;
+}
+
+#start-button {
+    background-color: #191c24;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+#start-button:hover {
+    color: #65a2e9;
+    box-shadow: 0 12px 16px 0 #65a2e9, 0 17px 50px 0 #65a2e9;
+}
+
+.button-blocked {
+    pointer-events: none;
+    opacity: 0.6;
+    cursor: not-allowed !important;
+}
+
+.button-blocked:hover {
+    pointer-events: none;
+}

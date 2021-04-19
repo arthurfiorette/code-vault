@@ -35,6 +35,7 @@ This repository is used to store any old projects that I no longer maintain. Usu
 ## 📎 Projects
 
 - [Email Sender](email-sender)
+- [Flappy Bird](flappy)
 
 ## 📃 License
 
