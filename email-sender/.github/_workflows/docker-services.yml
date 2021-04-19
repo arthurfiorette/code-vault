@@ -1,0 +1,27 @@
+name: Docker Services
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Up Containers
+        run: docker-compose up -d
+
+      - name: Check running containers
+        run: docker-compose ps -a
+
+      - name: Print last 25 log lines
+        run: docker-compose logs --tail=25
+
+      - name: Down Containers
+        run: docker-compose down
