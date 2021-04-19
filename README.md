@@ -28,14 +28,12 @@
 
 This repository is used to store any old projects that I no longer maintain. Usually, these projects are abandoned because I don't like the results, they are too old or they were used to learn something. If you wanna talk something about any of these projects is needed, feel free to open an issue.
 
-## 📑 Notes
-
-1.  I renamed all **workflows** folders to **\_workflows** just to keep any workflows yml file from running
-
 ## 📎 Projects
 
-- [Email Sender](email-sender)
-- [Flappy Bird](flappy)
+You can browse to the optimized version of each project from this list, but also see the raw version by downloading [`packages.zip`](packages.zip)
+
+- [`Email Sender`](email-sender)
+- [`Flappy Bird`](flappy)
 
 ## 📃 License
 
