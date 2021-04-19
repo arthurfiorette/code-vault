@@ -1,0 +1,8 @@
+general:
+  lang-file: /language/PT-BR.yml
+
+pass:
+  max-levels: 20
+
+tasks:
+  max-points-per-task: 10

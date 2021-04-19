@@ -1,0 +1,10 @@
+name: AdventurePass
+description: A full customizable battle pass type plugin
+main: com.github.hazork.adventurepass.AdventurePlugin
+author: Hazork
+version: 1.0.0
+api-version: 1.16
+commands:
+  adventure:
+    description: The principal and only command from this plugin.
+    usage: /<command> [arguments]

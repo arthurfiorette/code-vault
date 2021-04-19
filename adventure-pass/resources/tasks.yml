@@ -1,0 +1,211 @@
+tasks:
+  '0':
+    icon: OAK_WOOD
+    reward: 10
+    detector:
+      variant: PLACE_BLOCK
+      variable: GRASS_BLOCK
+      multiplier: 12
+  '1':
+    icon: DIRT
+    reward: 10
+    detector:
+      variant: BREAK_BLOCK
+      variable: DIRT
+      multiplier: 12
+  '2':
+    icon: OAK_WOOD
+    reward: 10
+    detector:
+      variant: PLACE_BLOCK
+      variable: GRASS_BLOCK
+      multiplier: 12
+  '3':
+    icon: OAK_WOOD
+    reward: 10
+    detector:
+      variant: PLACE_BLOCK
+      variable: GRASS_BLOCK
+      multiplier: 12
+  '4':
+    icon: OAK_WOOD
+    reward: 10
+    detector:
+      variant: PLACE_BLOCK
+      variable: GRASS_BLOCK
+      multiplier: 12
+  '5':
+    icon: OAK_WOOD
+    reward: 10
+    detector:
+      variant: PLACE_BLOCK
+      variable: GRASS_BLOCK
+      multiplier: 12
+  '6':
+    icon: OAK_WOOD
+    reward: 10
+    detector:
+      variant: PLACE_BLOCK
+      variable: GRASS_BLOCK
+      multiplier: 12
+  '7':
+    icon: OAK_WOOD
+    reward: 10
+    detector:
+      variant: PLACE_BLOCK
+      variable: GRASS_BLOCK
+      multiplier: 12
+  '8':
+    icon: OAK_WOOD
+    reward: 10
+    detector:
+      variant: PLACE_BLOCK
+      variable: GRASS_BLOCK
+      multiplier: 12
+  '9':
+    icon: OAK_WOOD
+    reward: 10
+    detector:
+      variant: PLACE_BLOCK
+      variable: GRASS_BLOCK
+      multiplier: 12
+  '10':
+    icon: OAK_WOOD
+    reward: 10
+    detector:
+      variant: PLACE_BLOCK
+      variable: GRASS_BLOCK
+      multiplier: 12
+  '11':
+    icon: OAK_WOOD
+    reward: 10
+    detector:
+      variant: PLACE_BLOCK
+      variable: GRASS_BLOCK
+      multiplier: 12
+  '12':
+    icon: OAK_WOOD
+    reward: 10
+    detector:
+      variant: PLACE_BLOCK
+      variable: GRASS_BLOCK
+      multiplier: 12
+  '13':
+    icon: OAK_WOOD
+    reward: 10
+    detector:
+      variant: PLACE_BLOCK
+      variable: GRASS_BLOCK
+      multiplier: 12
+  '14':
+    icon: OAK_WOOD
+    reward: 10
+    detector:
+      variant: PLACE_BLOCK
+      variable: GRASS_BLOCK
+      multiplier: 12
+  '15':
+    icon: OAK_WOOD
+    reward: 10
+    detector:
+      variant: PLACE_BLOCK
+      variable: GRASS_BLOCK
+      multiplier: 12
+  '16':
+    icon: OAK_WOOD
+    reward: 10
+    detector:
+      variant: PLACE_BLOCK
+      variable: GRASS_BLOCK
+      multiplier: 12
+  '17':
+    icon: OAK_WOOD
+    reward: 10
+    detector:
+      variant: PLACE_BLOCK
+      variable: GRASS_BLOCK
+      multiplier: 12
+  '18':
+    icon: OAK_WOOD
+    reward: 10
+    detector:
+      variant: PLACE_BLOCK
+      variable: GRASS_BLOCK
+      multiplier: 12
+  '19':
+    icon: OAK_WOOD
+    reward: 10
+    detector:
+      variant: PLACE_BLOCK
+      variable: GRASS_BLOCK
+      multiplier: 12
+  '20':
+    icon: OAK_WOOD
+    reward: 10
+    detector:
+      variant: PLACE_BLOCK
+      variable: GRASS_BLOCK
+      multiplier: 12
+  '21':
+    icon: OAK_WOOD
+    reward: 10
+    detector:
+      variant: PLACE_BLOCK
+      variable: GRASS_BLOCK
+      multiplier: 12
+  '22':
+    icon: OAK_WOOD
+    reward: 10
+    detector:
+      variant: PLACE_BLOCK
+      variable: GRASS_BLOCK
+      multiplier: 12
+  '23':
+    icon: OAK_WOOD
+    reward: 10
+    detector:
+      variant: PLACE_BLOCK
+      variable: GRASS_BLOCK
+      multiplier: 12
+  '24':
+    icon: OAK_WOOD
+    reward: 10
+    detector:
+      variant: PLACE_BLOCK
+      variable: GRASS_BLOCK
+      multiplier: 12
+  '25':
+    icon: OAK_WOOD
+    reward: 10
+    detector:
+      variant: PLACE_BLOCK
+      variable: GRASS_BLOCK
+      multiplier: 12
+  '26':
+    icon: OAK_WOOD
+    reward: 10
+    detector:
+      variant: PLACE_BLOCK
+      variable: GRASS_BLOCK
+      multiplier: 12
+  '27':
+    icon: OAK_WOOD
+    reward: 10
+    detector:
+      variant: PLACE_BLOCK
+      variable: GRASS_BLOCK
+      multiplier: 12
+  '28':
+    icon: OAK_WOOD
+    reward: 10
+    detector:
+      variant: PLACE_BLOCK
+      variable: GRASS_BLOCK
+      multiplier: 12
+  '29':
+    icon: OAK_WOOD
+    reward: 10
+    detector:
+      variant: PLACE_BLOCK
+      variable: GRASS_BLOCK
+      multiplier: 12
