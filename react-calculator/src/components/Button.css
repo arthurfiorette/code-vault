@@ -1,0 +1,50 @@
+:root {
+  --bg-button: hsl(0, 0%, 94%);
+  --border-button: solid 1px hsla(0, 0%, 0%, 0.067);
+}
+
+.button {
+  font-size: 1.4em;
+  background-color: var(--bg-button);
+  border: none;
+  border-right: var(--border-button);
+  border-bottom: var(--border-button);
+  outline: none;
+}
+
+.button:active {
+  background-color: hsl(0, 0%, 84%);
+}
+
+.button.double {
+  grid-column: span 2;
+}
+
+.button.triple {
+  grid-column: span 3;
+}
+
+.button.operation {
+  background-color: hsl(24, 95%, 59%);
+  color: #FFF;
+}
+
+.button.operation:active {
+  background-color: hsl(24, 95%, 49%);
+}
+
+.topLeft {
+  border-top-left-radius: 5px;
+}
+
+.topRight {
+  border-top-right-radius: 5px;
+}
+
+.bottomLeft {
+  border-bottom-left-radius: 5px;
+}
+
+.bottomRight {
+  border-bottom-right-radius: 5px;
+}

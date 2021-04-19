@@ -34,6 +34,7 @@ You can browse to the optimized version of each project from this list, but also
 
 - [`Email Sender`](email-sender)
 - [`Flappy Bird`](flappy)
+- [`React Calculator`](react-calculator)
 
 ## 📃 License
 

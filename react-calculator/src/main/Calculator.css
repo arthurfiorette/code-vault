@@ -1,0 +1,12 @@
+.calculator {
+  min-height: 420px;
+  width: 335px;
+  border-color: #000000;
+  border: 7px solid #222;
+  border-radius: 7px;
+  background-color: #222;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 1fr repeat(5, 65px);
+  box-shadow: 0 0 3px #222;
+}

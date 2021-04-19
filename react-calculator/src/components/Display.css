@@ -1,0 +1,21 @@
+.display {
+  grid-column: span 4;
+  color: #fff;
+  padding: 20px;
+  font-size: 2em;
+  overflow-x: scroll;
+  margin-bottom: 5px;
+  text-align: end;
+}
+
+.display::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+  height: 4px;
+  margin-bottom: 5px;
+}
+
+.display::-webkit-scrollbar-thumb {
+  background: #777;
+  border-radius: 3px;
+}
