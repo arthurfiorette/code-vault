@@ -20,12 +20,12 @@ jobs:
         # Why i'm not using creyD version: https://github.com/creyD/prettier_action/pull/44
         uses: suda/prettier_action@v3.4-rc.1
         with:
-          prettier_options: --write ./**/*.{js,jsx,ts,tsx,md,json,html,css,yml,scss}
+          prettier_options: --write ./**/*.{js,jsx,ts,tsx,md,json,html,css,yml,scss,java}
           same_commit: false
           only_changed: false
           # This module uses a script to install globally every specified npm module,
           # and as prettier-plugin-organize-imports needs typescript, i added both
-          prettier_plugins: 'typescript prettier-plugin-organize-imports'
+          prettier_plugins: 'typescript prettier-plugin-organize-imports @prettier/plugin-xml prettier-plugin-java'
           commit_message: '🎨 Prettified code'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
