@@ -57,7 +57,7 @@ export async function validate<T>(
       } else {
         validator.push(predicate);
       }
-    }
+    },
   });
 
   // Go through all the first verifiers and verify them
@@ -77,7 +77,7 @@ export async function validate<T>(
         validator({ parse, validate });
       });
 
-      const mappedFieldNames = errors.map(val => {
+      const mappedFieldNames = errors.map((val) => {
         val.field = i + '.' + val.field;
         return val;
       });

@@ -1,10 +1,8 @@
 // SASS
-import './scss/index.scss';
-
+import 'bootstrap';
 // Dependencias
 import 'jquery';
-import 'bootstrap';
-
 // JS
 import './js/core/includes';
 import './js/plugins/cityButtons';
+import './scss/index.scss';
