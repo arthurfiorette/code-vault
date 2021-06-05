@@ -43,6 +43,7 @@ You can browse to the optimized version of each project from this list, but also
 - [`Adventure Pass`](adventure-pass)
 - [`Bootstrap Gallery`](bootstrap-gallery)
 - [`Field Verifier`](field-verifier)
+- [`Typevents`](typevents)
 
 ## 📃 License
 
