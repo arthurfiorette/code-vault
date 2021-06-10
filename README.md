@@ -26,7 +26,6 @@
 
 > <pre align="center">
 > Any code here is no longer maintained.
-> If you wanna talk something about any of these projects, feel free to open an issue.
 > </pre>
 
 ## 📖 About
