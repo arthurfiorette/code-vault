@@ -6,7 +6,7 @@ function useData() {
     random: Math.ceil(Math.random() * 4 + 1),
     randomBoolean: Math.random() < 0.5,
     emitter: new EventEmitter<TestEvents>(),
-    foo: { count: 0 },
+    foo: { count: 0 }
   };
 }
 

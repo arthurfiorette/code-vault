@@ -30,11 +30,14 @@
 
 ## 📖 About
 
-This repository is used to store any old projects that I no longer maintain. Usually, these projects are abandoned because I don't like the results, they are too old or they were used to learn something.
+This repository is used to store any old projects that I no longer maintain. Usually,
+these projects are abandoned because I don't like the results, they are too old or they
+were used to learn something.
 
 ## 📎 Projects
 
-You can browse to the optimized version of each project from this list, but also see the raw version by downloading [`packages.zip`](packages.zip)
+You can browse to the optimized version of each project from this list, but also see the
+raw version by downloading [`packages.zip`](packages.zip)
 
 - [`Email Sender`](email-sender)
 - [`Flappy Bird`](flappy)
@@ -46,8 +49,10 @@ You can browse to the optimized version of each project from this list, but also
 
 ## 📃 License
 
-Licensed under the **GNU General Public License v3.0**. See [`LICENSE`](LICENSE) for more informations.
+Licensed under the **GNU General Public License v3.0**. See [`LICENSE`](LICENSE) for more
+informations.
 
 ## 📧 Contact
 
-See my contact information on my [GitHub Profile Page](https://github.com/ArthurFiorette) or open a new issue.
+See my contact information on my [GitHub Profile Page](https://github.com/ArthurFiorette)
+or open a new issue.

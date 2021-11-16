@@ -37,10 +37,7 @@ public class MenuView {
   }
 
   public List<Inventory> getInventorys() {
-    return getMenus()
-      .stream()
-      .map(m -> m.getInventory())
-      .collect(Collectors.toList());
+    return getMenus().stream().map(m -> m.getInventory()).collect(Collectors.toList());
   }
 
   public Menu getMenu(String menuName) {

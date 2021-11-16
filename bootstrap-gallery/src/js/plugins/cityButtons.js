@@ -22,8 +22,7 @@ $.fn.cityButtons = function () {
     cities.add($(e).attr('bg-city'));
   });
 
-  const buildBtn = (html) =>
-    $('<button>').addClass(['btn', 'btn-info']).html(html);
+  const buildBtn = (html) => $('<button>').addClass(['btn', 'btn-info']).html(html);
   const btns = Array.from(cities).map((city) =>
     buildBtn(city).on('click', () => filterByCity(city))
   );

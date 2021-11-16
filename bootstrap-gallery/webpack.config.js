@@ -10,28 +10,28 @@ module.exports = {
   entry: './src/index.js',
   devServer: {
     contentBase: './build',
-    port: 1227,
+    port: 1227
   },
   optimization: {
     minimizer: [
       new UglifyJsPlugin({
         cache: true,
         parallel: true,
-        sourceMap: true,
+        sourceMap: true
       }),
-      new OptimizeCSSAssetsPlugin({}),
-    ],
+      new OptimizeCSSAssetsPlugin({})
+    ]
   },
   output: {
     filename: 'app.js',
-    path: __dirname + '/build',
+    path: __dirname + '/build'
   },
   plugins: [
     new MiniCssExtractPlugin({ filename: 'estilo.css' }),
     new CopyWebpackPlugin([
       { context: 'src/', from: '**/*.html' },
-      { context: 'src/', from: 'imgs/**/*' },
-    ]),
+      { context: 'src/', from: 'imgs/**/*' }
+    ])
   ],
   module: {
     rules: [
@@ -41,17 +41,17 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           // 'style-loader', // Adiciona CSS a DOM injetando a tag <style>
           'css-loader', // interpreta @import, url()...
-          'sass-loader',
-        ],
+          'sass-loader'
+        ]
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
-        use: ['file-loader'],
+        use: ['file-loader']
       },
       {
         test: /.(ttf|otf|eot|svg|woff(2)?)$/,
-        use: ['file-loader'],
-      },
-    ],
-  },
+        use: ['file-loader']
+      }
+    ]
+  }
 };

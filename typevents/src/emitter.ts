@@ -134,10 +134,7 @@ export class EventEmitter<E extends EventType<E> = EmptyEventType> {
     return wrapper;
   }
 
-  once<K extends keyof E>(
-    type: K,
-    listener: EventListener<E[K]>
-  ): EventEmitter<E> {
+  once<K extends keyof E>(type: K, listener: EventListener<E[K]>): EventEmitter<E> {
     return this.addListener(type, this._onceWrapper(type, listener));
   }
 
@@ -243,10 +240,7 @@ export class EventEmitter<E extends EventType<E> = EmptyEventType> {
     return this;
   }
 
-  private _listeners<K extends keyof E>(
-    type: K,
-    unwrap: boolean
-  ): EventListener<E[K]>[] {
+  private _listeners<K extends keyof E>(type: K, unwrap: boolean): EventListener<E[K]>[] {
     const events = this._events;
     const listeners = events[type];
 

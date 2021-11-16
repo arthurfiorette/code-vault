@@ -32,12 +32,7 @@ public class PassHandler implements UserDependent {
   private void levelUp() {
     if (points > getPointsToUp()) {
       System.out.println(
-        String.format(
-          "Level: %s para %s, com %s pontos",
-          level,
-          level + 1,
-          points
-        )
+        String.format("Level: %s para %s, com %s pontos", level, level + 1, points)
       );
       level++;
       Optional.ofNullable(getLevel().getPrize()).ifPresent(prizes::add);

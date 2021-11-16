@@ -25,14 +25,10 @@ public class SQLite {
       try {
         connection = DriverManager.getConnection(url);
         loadTable();
-        getPlugin()
-          .sendMessage("§bConexao estabelecida com a database.", false);
+        getPlugin().sendMessage("§bConexao estabelecida com a database.", false);
       } catch (Exception e) {
         getPlugin()
-          .sendMessage(
-            "§cConexao falha com a database! Desabilitando plugin",
-            true
-          );
+          .sendMessage("§cConexao falha com a database! Desabilitando plugin", true);
         e.printStackTrace();
       }
     }
@@ -43,14 +39,10 @@ public class SQLite {
       try {
         connection.close();
         connection = null;
-        getPlugin()
-          .sendMessage("§bConexao com a base de dados foi finalizada.", false);
+        getPlugin().sendMessage("§bConexao com a base de dados foi finalizada.", false);
       } catch (SQLException e) {
         getPlugin()
-          .sendMessage(
-            "§cConexao com a base de dados não pode ser finalizada.",
-            false
-          );
+          .sendMessage("§cConexao com a base de dados não pode ser finalizada.", false);
         e.printStackTrace();
       }
     }
@@ -63,10 +55,7 @@ public class SQLite {
       stm.close();
     } catch (SQLException e) {
       getPlugin()
-        .sendMessage(
-          "§cDatabase nao pode ser carregada, desabilitando plugin",
-          true
-        );
+        .sendMessage("§cDatabase nao pode ser carregada, desabilitando plugin", true);
       e.printStackTrace();
     }
   }

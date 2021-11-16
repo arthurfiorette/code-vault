@@ -1,6 +1,7 @@
 # Field Verifier
 
-This package was an **typed** event system for **Node.js**, but was merged into typed-core.
+This package was an **typed** event system for **Node.js**, but was merged into
+typed-core.
 
 ```ts
 import { EmitterEvents, EventEmitter } from 'typevents';

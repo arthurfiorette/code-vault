@@ -33,11 +33,9 @@ public class UserController implements Listener {
     if (inv.getLocation() == null) {
       Player player = SpigotUtils.getPlayer(event.getWhoClicked());
       getMenu(player.getUniqueId(), inv)
-        .ifPresent(
-          menu -> {
-            menu.onMenuClick(event);
-          }
-        );
+        .ifPresent(menu -> {
+          menu.onMenuClick(event);
+        });
     }
   }
 

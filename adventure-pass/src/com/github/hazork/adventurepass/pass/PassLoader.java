@@ -24,9 +24,7 @@ public class PassLoader {
   }
 
   public static int getNecessaryPoints(int level) {
-    return new Expression(
-      func.replace("{level}", Integer.valueOf(level).toString())
-    )
+    return new Expression(func.replace("{level}", Integer.valueOf(level).toString()))
       .eval()
       .intValue();
   }
@@ -91,12 +89,7 @@ public class PassLoader {
     } else {
       Material icon = Material.valueOf(map.get("icon"));
       String name = map.get("name");
-      Prize prize = new Prize(
-        number,
-        map.get("description"),
-        map.get("command"),
-        name
-      );
+      Prize prize = new Prize(number, map.get("description"), map.get("command"), name);
       levelMap.put(number, new Level(number, icon, prize));
     }
   }

@@ -1,6 +1,7 @@
 # Field Verifier
 
-This package was an **typed** object validator for **Node.js**, but was merged into typed-core.
+This package was an **typed** object validator for **Node.js**, but was merged into
+typed-core.
 
 ```js
 import { validate } from 'field-verifier';
@@ -8,9 +9,9 @@ import { validate } from 'field-verifier';
 const input = {
   name: {
     firstName: 'John',
-    lastName: { first: 'Smith', second: '' },
+    lastName: { first: 'Smith', second: '' }
   },
-  age: 12,
+  age: 12
 };
 
 const errors = await validate(input, ({ parse, validate }) => {

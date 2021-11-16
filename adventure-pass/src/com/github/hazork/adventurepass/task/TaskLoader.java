@@ -20,10 +20,7 @@ public class TaskLoader {
   }
 
   public static List<Task> getTasks(String... keys) {
-    return Arrays
-      .stream(keys)
-      .map(TaskLoader::getTask)
-      .collect(Collectors.toList());
+    return Arrays.stream(keys).map(TaskLoader::getTask).collect(Collectors.toList());
   }
 
   public static Task getTask(String key) {
@@ -40,22 +37,20 @@ public class TaskLoader {
     file.copyFrom(null, false);
     YMLUtils
       .getKeys(file.getConfiguration(true), "tasks")
-      .forEach(
-        (key, map) -> {
-          Material icon = Material.valueOf(map.get("icon"));
-          int reward = Integer.parseInt(map.get("reward"));
-          Task task = new Task(key, reward, icon);
-          task.setObjective(
-            Objective.Type
-              .valueOf(map.get("detector.variant"))
-              .getObjective(
-                task,
-                Integer.parseInt(map.get("detector.multiplier")),
-                map.get("detector.variable")
-              )
-          );
-          taskMap.put(key, task);
-        }
-      );
+      .forEach((key, map) -> {
+        Material icon = Material.valueOf(map.get("icon"));
+        int reward = Integer.parseInt(map.get("reward"));
+        Task task = new Task(key, reward, icon);
+        task.setObjective(
+          Objective.Type
+            .valueOf(map.get("detector.variant"))
+            .getObjective(
+              task,
+              Integer.parseInt(map.get("detector.multiplier")),
+              map.get("detector.variable")
+            )
+        );
+        taskMap.put(key, task);
+      });
   }
 }

@@ -5,9 +5,7 @@ import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.BiConsumer;
 
-public class CacheMap<K, V>
-  extends ConcurrentHashMap<K, V>
-  implements Runnable {
+public class CacheMap<K, V> extends ConcurrentHashMap<K, V> implements Runnable {
 
   private static final long serialVersionUID = -8795424293264578508L;
 

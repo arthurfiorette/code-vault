@@ -15,18 +15,14 @@ public class YMLUtils {
   ) {
     Map<String, Map<String, String>> request = new HashMap<>();
     ConfigurationSection cSection = fc.getConfigurationSection(section);
-    cSection
-      .getKeys(false)
-      .stream()
-      .forEach(key -> request.put(key, Maps.newHashMap()));
+    cSection.getKeys(false).stream().forEach(key -> request.put(key, Maps.newHashMap()));
     cSection
       .getKeys(true)
       .stream()
-      .forEach(
-        key ->
-          request
-            .get(getFirstKey(key))
-            .put(getLastKeys(key), fc.getString(section + "." + key))
+      .forEach(key ->
+        request
+          .get(getFirstKey(key))
+          .put(getLastKeys(key), fc.getString(section + "." + key))
       );
     return request;
   }

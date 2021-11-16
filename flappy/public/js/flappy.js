@@ -42,7 +42,7 @@ var __generator =
           return t[1];
         },
         trys: [],
-        ops: [],
+        ops: []
       },
       f,
       y,
@@ -216,9 +216,7 @@ var DoublePipe = /** @class */ (function () {
 function calculatePipes(gameHeight, gameWidth, pipeGap, pipeSpace) {
   var pipes = [];
   for (var i = 0; i < Math.ceil(gameWidth / pipeSpace) + 1; i++) {
-    pipes.push(
-      new DoublePipe(gameHeight, pipeGap, 0.75 * gameWidth + pipeSpace * i)
-    );
+    pipes.push(new DoublePipe(gameHeight, pipeGap, 0.75 * gameWidth + pipeSpace * i));
   }
   return pipes;
 }
@@ -323,16 +321,14 @@ function isOverlapped(elementA, elementB) {
   var bcrB = elementB.getBoundingClientRect();
   var horizontal =
     bcrA.left + bcrA.width >= bcrB.left && bcrB.left + bcrB.width >= bcrA.left;
-  var vertical =
-    bcrA.top + bcrA.height >= bcrB.top && bcrB.top + bcrB.height >= bcrA.top;
+  var vertical = bcrA.top + bcrA.height >= bcrB.top && bcrB.top + bcrB.height >= bcrA.top;
   return horizontal && vertical;
 }
 function isOverlappedWithBorder(bird, border) {
   var bcr = bird.element.getBoundingClientRect();
   var gameBcr = border.getBoundingClientRect();
   return (
-    (bcr.top | 0) <= (gameBcr.top | 0) + 5 ||
-    (bcr.bottom | 0) >= (gameBcr.bottom | 0) - 5
+    (bcr.top | 0) <= (gameBcr.top | 0) + 5 || (bcr.bottom | 0) >= (gameBcr.bottom | 0) - 5
   );
 }
 function isCollided(bird, barriers, border) {
@@ -383,8 +379,7 @@ var FlappyGame = /** @class */ (function () {
     var _this = this;
     this.playing = false;
     this.points = 0;
-    this.element =
-      document.querySelector('[wm-flappy]') || newElement('div', '');
+    this.element = document.querySelector('[wm-flappy]') || newElement('div', '');
     this.element.innerHTML = '';
     this.gameHeight = this.element.clientHeight;
     this.gameWitdh = this.element.clientWidth;
@@ -450,9 +445,7 @@ var FlappyGame = /** @class */ (function () {
           setStatistic('best', points);
         }
         new FlappyGame().request(
-          'You lost! Points: ' +
-            _this.progress.getPoints() +
-            '. Click here to restart!'
+          'You lost! Points: ' + _this.progress.getPoints() + '. Click here to restart!'
         );
       }
     }, tickrate);

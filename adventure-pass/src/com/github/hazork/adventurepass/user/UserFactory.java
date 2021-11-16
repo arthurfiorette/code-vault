@@ -15,11 +15,7 @@ import org.bukkit.event.Listener;
 
 public class UserFactory implements Listener {
 
-  static CacheMap<UUID, User> userCache = new CacheMap<>(
-    250,
-    10,
-    ((K, V) -> save(V))
-  );
+  static CacheMap<UUID, User> userCache = new CacheMap<>(250, 10, ((K, V) -> save(V)));
 
   public static User from(Player player) {
     return from(player.getUniqueId());

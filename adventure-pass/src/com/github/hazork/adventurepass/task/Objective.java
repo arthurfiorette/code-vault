@@ -65,10 +65,6 @@ public abstract class Objective implements Listener {
       }
     };
 
-    public abstract Objective getObjective(
-      Task owner,
-      int times,
-      String variable
-    );
+    public abstract Objective getObjective(Task owner, int times, String variable);
   }
 }

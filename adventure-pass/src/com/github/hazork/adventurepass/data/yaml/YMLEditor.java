@@ -44,8 +44,7 @@ public final class YMLEditor {
 
   public static YMLFile getFile(String name, boolean createIfNotExists) {
     YMLFile file = filemap.get(name);
-    if (createIfNotExists) file =
-      (file == null) ? createFile(null, name) : file;
+    if (createIfNotExists) file = (file == null) ? createFile(null, name) : file;
     return file;
   }
 

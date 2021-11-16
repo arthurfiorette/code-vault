@@ -2,7 +2,7 @@ const redis = require('redis');
 const client = redis.createClient({
   port: 6379,
   host: process.env.REDIS_HOST || 'queue',
-  db: 0,
+  db: 0
 });
 
 client.on('ready', async () => {

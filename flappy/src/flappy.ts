@@ -86,9 +86,7 @@ function calculatePipes(
 ): DoublePipe[] {
   const pipes: DoublePipe[] = [];
   for (let i = 0; i < Math.ceil(gameWidth / pipeSpace) + 1; i++) {
-    pipes.push(
-      new DoublePipe(gameHeight, pipeGap, 0.75 * gameWidth + pipeSpace * i)
-    );
+    pipes.push(new DoublePipe(gameHeight, pipeGap, 0.75 * gameWidth + pipeSpace * i));
   }
   return pipes;
 }
@@ -233,16 +231,11 @@ function isOverlappedWithBorder(bird: Flappy, border: HTMLElement) {
   const bcr = bird.element.getBoundingClientRect();
   const gameBcr = border.getBoundingClientRect();
   return (
-    (bcr.top | 0) <= (gameBcr.top | 0) + 5 ||
-    (bcr.bottom | 0) >= (gameBcr.bottom | 0) - 5
+    (bcr.top | 0) <= (gameBcr.top | 0) + 5 || (bcr.bottom | 0) >= (gameBcr.bottom | 0) - 5
   );
 }
 
-function isCollided(
-  bird: Flappy,
-  barriers: PipesLoader,
-  border: HTMLElement
-): boolean {
+function isCollided(bird: Flappy, barriers: PipesLoader, border: HTMLElement): boolean {
   let collided = false;
   for (let pair of barriers.pairs) {
     if (!collided) {
@@ -301,8 +294,7 @@ class FlappyGame {
   private points: number = 0;
 
   constructor() {
-    this.element =
-      document.querySelector('[wm-flappy]') || newElement('div', '');
+    this.element = document.querySelector('[wm-flappy]') || newElement('div', '');
     this.element.innerHTML = '';
     this.gameHeight = this.element.clientHeight;
     this.gameWitdh = this.element.clientWidth;
@@ -320,9 +312,7 @@ class FlappyGame {
     this.flappy = new Flappy(this.gameHeight, this);
     this.element.appendChild(this.progress.element);
     this.element.appendChild(this.flappy.element);
-    this.barrierLoader.pairs.forEach((pair) =>
-      this.element.appendChild(pair.element)
-    );
+    this.barrierLoader.pairs.forEach((pair) => this.element.appendChild(pair.element));
   }
 
   request(message: string | null): void {

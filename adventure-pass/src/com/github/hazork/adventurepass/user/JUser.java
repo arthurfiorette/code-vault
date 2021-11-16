@@ -41,9 +41,7 @@ public final class JUser {
         .getTaskAdvancements()
         .entrySet()
         .stream()
-        .collect(
-          Collectors.toMap(e -> e.getKey().getKey(), Map.Entry::getValue)
-        );
+        .collect(Collectors.toMap(e -> e.getKey().getKey(), Map.Entry::getValue));
     this.completeTasks =
       user
         .getTaskHandler()
@@ -96,23 +94,17 @@ public final class JUser {
       prizes.setAccessible(true);
       prizes.set(
         user.getPassHandler(),
-        this.prizes.stream()
-          .map(PassLoader::getPrize)
-          .collect(Collectors.toList())
+        this.prizes.stream().map(PassLoader::getPrize).collect(Collectors.toList())
       );
 
-      Field taskAdvancements =
-        TaskHandler.class.getDeclaredField("taskAdvancements");
+      Field taskAdvancements = TaskHandler.class.getDeclaredField("taskAdvancements");
       taskAdvancements.setAccessible(true);
       taskAdvancements.set(
         user.getTaskHandler(),
         this.tasksAdvancements.entrySet()
           .stream()
           .collect(
-            Collectors.toMap(
-              e -> TaskLoader.getTask(e.getKey()),
-              Map.Entry::getValue
-            )
+            Collectors.toMap(e -> TaskLoader.getTask(e.getKey()), Map.Entry::getValue)
           )
       );
 
@@ -120,9 +112,7 @@ public final class JUser {
       completeTasks.setAccessible(true);
       completeTasks.set(
         user.getTaskHandler(),
-        this.completeTasks.stream()
-          .map(TaskLoader::getTask)
-          .collect(Collectors.toSet())
+        this.completeTasks.stream().map(TaskLoader::getTask).collect(Collectors.toSet())
       );
     } catch (Exception e) {
       e.printStackTrace();

@@ -84,11 +84,7 @@ public class PrizeMenu extends Menu {
         nextPage();
         break;
       default:
-        ItemMenu local = new ItemMenu(
-          event.getSlot(),
-          page,
-          event.getCurrentItem()
-        );
+        ItemMenu local = new ItemMenu(event.getSlot(), page, event.getCurrentItem());
         System.out.println(2);
         if (prizeLocal.containsKey(local)) {
           System.out.println(1);

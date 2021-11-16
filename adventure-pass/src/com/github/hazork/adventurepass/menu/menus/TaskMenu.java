@@ -113,11 +113,7 @@ public class TaskMenu extends Menu {
         }
         break;
       default:
-        ItemMenu local = new ItemMenu(
-          event.getSlot(),
-          page,
-          event.getCurrentItem()
-        );
+        ItemMenu local = new ItemMenu(event.getSlot(), page, event.getCurrentItem());
         if (taskLocal.containsKey(local)) {
           TaskHandler handler = getTaskHandler();
           Task clicked = taskLocal.get(local);
@@ -206,12 +202,7 @@ public class TaskMenu extends Menu {
         cor + "Pontos: §7" + task.getReward(),
         cor + "Requísitos: §7" + task.getObjective().getDescription(),
         "",
-        cor +
-        (
-          glow
-            ? "Clique esquerdo para desativar."
-            : "Clique esquerdo para ativar."
-        )
+        cor + (glow ? "Clique esquerdo para desativar." : "Clique esquerdo para ativar.")
       );
   }
 

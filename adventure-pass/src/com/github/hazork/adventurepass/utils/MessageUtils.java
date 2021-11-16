@@ -35,15 +35,9 @@ public class MessageUtils {
     return splitLores(String.join(" ", lores), 35, nextLine);
   }
 
-  public static List<String> splitLores(
-    String text,
-    int width,
-    String newLineText
-  ) {
+  public static List<String> splitLores(String text, int width, String newLineText) {
     String nl = "2UJGQYUOFGXTAI123ue12ryt345q92fajgfuytwedgf";
-    return Arrays.asList(
-      WordUtils.wrap(text, width, nl + newLineText, false).split(nl)
-    );
+    return Arrays.asList(WordUtils.wrap(text, width, nl + newLineText, false).split(nl));
   }
 
   public static String progressbar(
@@ -70,19 +64,12 @@ public class MessageUtils {
     long currentValue,
     long maxValue
   ) {
-    return progressbar(
-      width,
-      incomplete,
-      complete,
-      (double) currentValue / maxValue
-    );
+    return progressbar(width, incomplete, complete, (double) currentValue / maxValue);
   }
 
   public static String percentage(long value, long max) {
     return (
-      new BigDecimal((double) value / max * 100)
-        .setScale(2, RoundingMode.DOWN) +
-      "%"
+      new BigDecimal((double) value / max * 100).setScale(2, RoundingMode.DOWN) + "%"
     );
   }
 }

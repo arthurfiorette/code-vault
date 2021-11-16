@@ -34,9 +34,7 @@ public class CommandReader implements CommandExecutor {
     String label,
     String[] args
   ) {
-    SpigotCommand cmd = commandMap.get(
-      args.length == 0 ? DEFAULT_ARGUMENT : args[0]
-    );
+    SpigotCommand cmd = commandMap.get(args.length == 0 ? DEFAULT_ARGUMENT : args[0]);
     if (cmd != null) {
       if (cmd.onlyPlayer() && !SpigotUtils.isPlayer(sender)) {
         sender.sendMessage("§cSomente players podem executar este comando.");

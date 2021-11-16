@@ -182,8 +182,7 @@ public class PassMenu extends Menu {
           "§fNome: §7" + level.getPrize().getName(),
           "§fDescrição: §7" + level.getPrize().getDescription(),
           "",
-          "§aPontos nescessários: §f" +
-          PassLoader.getNecessaryPoints(level.getNumber())
+          "§aPontos nescessários: §f" + PassLoader.getNecessaryPoints(level.getNumber())
         );
   }
 

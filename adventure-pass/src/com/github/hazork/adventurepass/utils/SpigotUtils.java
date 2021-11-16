@@ -42,11 +42,7 @@ public class SpigotUtils {
       .forEach(p -> p.spigot().sendMessage(type, new TextComponent(msg)));
   }
 
-  public static void sendMessage(
-    Player player,
-    ChatMessageType type,
-    String msg
-  ) {
+  public static void sendMessage(Player player, ChatMessageType type, String msg) {
     player.spigot().sendMessage(type, new TextComponent(msg));
   }
 
@@ -71,11 +67,7 @@ public class SpigotUtils {
     sendSound(player, sound);
   }
 
-  public static void sendMessageSoundAll(
-    ChatMessageType type,
-    Sound sound,
-    String msg
-  ) {
+  public static void sendMessageSoundAll(ChatMessageType type, Sound sound, String msg) {
     sendMessageAll(type, msg);
     sendSoundAll(sound);
   }
@@ -104,12 +96,7 @@ public class SpigotUtils {
     String displayName,
     String... lorelines
   ) {
-    return setMeta(
-      new ItemStack(material, amount),
-      glow,
-      displayName,
-      lorelines
-    );
+    return setMeta(new ItemStack(material, amount), glow, displayName, lorelines);
   }
 
   public static ItemStack setMeta(
@@ -130,15 +117,13 @@ public class SpigotUtils {
           List<String> lores = new ArrayList<>();
           Arrays
             .stream(lorelines)
-            .forEach(
-              lore -> {
-                if (lore.length() > 35) {
-                  lores.addAll(MessageUtils.splitLoreColor(lore));
-                } else {
-                  lores.add(lore);
-                }
+            .forEach(lore -> {
+              if (lore.length() > 35) {
+                lores.addAll(MessageUtils.splitLoreColor(lore));
+              } else {
+                lores.add(lore);
               }
-            );
+            });
           meta.setLore(lores);
         }
         return meta;
@@ -164,10 +149,7 @@ public class SpigotUtils {
     );
   }
 
-  public static ItemStack setItemMeta(
-    ItemStack item,
-    UnaryOperator<ItemMeta> callback
-  ) {
+  public static ItemStack setItemMeta(ItemStack item, UnaryOperator<ItemMeta> callback) {
     return item.setItemMeta(callback.apply(item.getItemMeta())) ? item : item;
   }
 
