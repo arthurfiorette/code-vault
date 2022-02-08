@@ -33,7 +33,11 @@ export const GitCard = (({ repoData }) => {
       <Flex color="gray.500">
         {repoData.language && <chakra.div mr={3}>{repoData.language}</chakra.div>}
 
-        <chakra.a href={`${repoData.html_url}/stargazers`} mr={3} _hover={{ color: highlight }}>
+        <chakra.a
+          href={`${repoData.html_url}/stargazers`}
+          mr={3}
+          _hover={{ color: highlight }}
+        >
           <Icon as={AiOutlineStar} h={4} w={4} mr={1} />
           {repoData.stargazers_count}
         </chakra.a>

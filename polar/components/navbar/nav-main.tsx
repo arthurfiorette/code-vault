@@ -1,4 +1,11 @@
-import { Box, chakra, Flex, StackDivider, useColorModeValue, VStack } from '@chakra-ui/react';
+import {
+  Box,
+  chakra,
+  Flex,
+  StackDivider,
+  useColorModeValue,
+  VStack
+} from '@chakra-ui/react';
 import { UserData } from 'lib/types';
 import React from 'react';
 import styles from 'styles/nav-main.module.sass';

@@ -6,15 +6,17 @@
 
 ## About
 
-This repository stores any old project that I no longer maintain. These projects are abandoned because I don't like the results, they are too old or they
-were used to learn something.
+This repository stores any old project that I no longer maintain. These projects are
+abandoned because I don't like the results, they are too old or they were used to learn
+something.
 
 <br />
 
 ## Project list
 
 You can browser the formatted version of each project by clicking on the project name.
-There is also an [`packages.zip`](packages.zip) file containing all projects in a "raw" version.
+There is also an [`packages.zip`](packages.zip) file containing all projects in a "raw"
+version.
 
 - [`Email Sender`](/email-sender)
 - [`Flappy Bird`](/flappy)
@@ -29,8 +31,7 @@ There is also an [`packages.zip`](packages.zip) file containing all projects in 
 
 ## License
 
-Licensed under the **GPLv3**. See [`LICENSE`](LICENSE) for more
-informations.
+Licensed under the **GPLv3**. See [`LICENSE`](LICENSE) for more informations.
 
 <br />
 

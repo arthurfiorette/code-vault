@@ -7,7 +7,9 @@ export const CodeEffect = (({ texts }) => {
   const code = (ending: boolean) => (
     <>
       {ending ? '</' : '<'}
-      <chakra.span color={useColorModeValue('highlight', 'highlightDark')}>code</chakra.span>
+      <chakra.span color={useColorModeValue('highlight', 'highlightDark')}>
+        code
+      </chakra.span>
       {'>'}
     </>
   );
