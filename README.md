@@ -1,58 +1,42 @@
-<p align="center">
-  <a href="https://github.com/ArthurFiorette/code-vault/network/members"><img
-      src="https://img.shields.io/github/forks/ArthurFiorette/code-vault?logo=github&style=flat-square&label=Forks"
-      target="_blank"
-      alt="Forks" /></a>
-  <a href="https://github.com/ArthurFiorette/code-vault/issues"><img
-      src="https://img.shields.io/github/issues/ArthurFiorette/code-vault?logo=github&style=flat-square&label=Issues"
-      target="_blank"
-      alt="Issues" /></a>
-  <a href="https://github.com/ArthurFiorette/code-vault/stargazers"><img
-      src="https://img.shields.io/github/stars/ArthurFiorette/code-vault?logo=github&style=flat-square&label=Stars"
-      target="_blank"
-      alt="Stars" /></a>
-  <a href="https://github.com/ArthurFiorette/code-vault/blob/main/LICENSE"><img
-      src="https://img.shields.io/github/license/ArthurFiorette/code-vault?logo=github&style=flat-square&label=License"
-      target="_blank"
-      alt="License" /></a>
-</p>
+<br />
 
-<h1 align="center">
-  <strong><a href="https://github.com/ArthurFiorette/code-vault/" target="_blank">Code Vault</a> 🗃</strong>
-</h1>
-<p align="center">
-  <i>Where I keep some old projects</i>
-</p>
+<h1 align="center">Code Vault</h1>
 
-> <pre align="center">
-> Any code here is no longer maintained.
-> </pre>
+<br />
 
-## 📖 About
+## About
 
-This repository is used to store any old projects that I no longer maintain. Usually,
-these projects are abandoned because I don't like the results, they are too old or they
+This repository stores any old project that I no longer maintain. These projects are abandoned because I don't like the results, they are too old or they
 were used to learn something.
 
-## 📎 Projects
+<br />
 
-You can browse to the optimized version of each project from this list, but also see the
-raw version by downloading [`packages.zip`](packages.zip)
+## Project list
 
-- [`Email Sender`](email-sender)
-- [`Flappy Bird`](flappy)
-- [`React Calculator`](react-calculator)
-- [`Adventure Pass`](adventure-pass)
-- [`Bootstrap Gallery`](bootstrap-gallery)
-- [`Field Verifier`](field-verifier)
-- [`Typevents`](typevents)
+You can browser the formatted version of each project by clicking on the project name.
+There is also an [`packages.zip`](packages.zip) file containing all projects in a "raw" version.
 
-## 📃 License
+- [`Email Sender`](/email-sender)
+- [`Flappy Bird`](/flappy)
+- [`React Calculator`](/react-calculator)
+- [`Adventure Pass`](/adventure-pass)
+- [`Bootstrap Gallery`](/bootstrap-gallery)
+- [`Field Verifier`](/field-verifier)
+- [`Typevents`](/typevents)
+- [`Polar`](/polar)
 
-Licensed under the **GNU General Public License v3.0**. See [`LICENSE`](LICENSE) for more
+<br />
+
+## License
+
+Licensed under the **GPLv3**. See [`LICENSE`](LICENSE) for more
 informations.
 
-## 📧 Contact
+<br />
+
+## Contact
 
 See my contact information on my [GitHub Profile Page](https://github.com/ArthurFiorette)
 or open a new issue.
+
+<br />
