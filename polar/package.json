@@ -1,0 +1,51 @@
+{
+  "name": "polar",
+  "version": "1.0.0",
+  "description": "My personal portfolio and blog!",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
+    "build": "next build",
+    "start": "next start",
+    "prettify": "prettier --write .",
+    "gen:theme-typings": "chakra-cli tokens ./styles/theme.ts",
+    "postinstall": "npm run clean",
+    "clean": "npm run prettify && npm run gen:theme-typings"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArthurFiorette/polar.git"
+  },
+  "keywords": [],
+  "author": "Hazork",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ArthurFiorette/polar/issues"
+  },
+  "homepage": "https://github.com/ArthurFiorette/polar#readme",
+  "dependencies": {
+    "@chakra-ui/react": "^1.6.7",
+    "@emotion/react": "^11.0.0",
+    "@emotion/styled": "^11.0.0",
+    "@octokit/rest": "^18.5.3",
+    "framer-motion": "^4.0.0",
+    "javascript-time-ago": "^2.3.6",
+    "next": "^10.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "sass": "^1.32.13"
+  },
+  "devDependencies": {
+    "@chakra-ui/cli": "^1.3.1",
+    "@types/javascript-time-ago": "^2.0.2",
+    "@types/next": "^9.0.0",
+    "@types/node": "^16.11.9",
+    "@types/react": "^17.0.5",
+    "@types/react-dom": "^17.0.5",
+    "cross-env": "^7.0.3",
+    "prettier": "^2.3.2",
+    "react-typing-effect": "^2.0.5",
+    "typescript": "^4.4.2"
+  }
+}

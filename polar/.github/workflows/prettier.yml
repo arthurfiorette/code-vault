@@ -1,0 +1,28 @@
+name: Prettify Code
+
+on:
+  workflow_dispatch:
+
+jobs:
+  prettier:
+    runs-on: ubuntu-latest
+    name: Prettify code
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+      - name: Prettify code
+        # Why i'm not using creyD version: https://github.com/creyD/prettier_action/pull/44
+        uses: suda/prettier_action@v3.4-rc.1
+        with:
+          prettier_options: --write .
+          same_commit: false
+          only_changed: false
+          # This module uses a script to install globally every specified npm module,
+          # and as prettier-plugin-organize-imports needs typescript, i added both
+          prettier_plugins: 'typescript prettier-plugin-organize-imports'
+          commit_message: '🎨 Prettified code'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
