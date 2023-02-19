@@ -26,6 +26,7 @@ version.
 - [`Field Verifier`](/field-verifier)
 - [`Typevents`](/typevents)
 - [`Polar`](/polar)
+- [`Typed Code`](/typed-core)
 
 <br />
 
