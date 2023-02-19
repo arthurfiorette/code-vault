@@ -28,7 +28,7 @@ export type UserData = {
 
 export type ConstantsType = {
   GITHUB_USERNAME: string;
-  MEDIA: [typeof Icons[keyof typeof Icons], string][];
+  MEDIA: [(typeof Icons)[keyof typeof Icons], string][];
   WHAT_I_DO: string[];
   BRAND_URL: string;
   ABOUT: string[];

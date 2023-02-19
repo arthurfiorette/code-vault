@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import Button from '../components/Button';
 import Display from '../components/Display';
 import './Calculator.css';

@@ -2,21 +2,21 @@
   "name": "bootstrap-gallery",
   "version": "1.0.0",
   "description": "A simple photo gallery project",
-  "main": "index.js",
   "keywords": [],
-  "author": "Arthur Fiorette",
-  "license": "GPL-3.0-only",
-  "scripts": {
-    "start": "webpack-dev-server",
-    "build": "cross-env NODE_ENV=production webpack"
-  },
   "homepage": "https://github.com/ArthurFiorette/code-vault#readme",
+  "bugs": {
+    "url": "https://github.com/ArthurFiorette/code-vault/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ArthurFiorette/code-vault.git"
   },
-  "bugs": {
-    "url": "https://github.com/ArthurFiorette/code-vault/issues"
+  "license": "GPL-3.0-only",
+  "author": "Arthur Fiorette",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack",
+    "start": "webpack-dev-server"
   },
   "devDependencies": {
     "bootstrap": "4.1.1",

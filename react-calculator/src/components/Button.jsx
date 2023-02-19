@@ -1,4 +1,3 @@
-import React from 'react';
 import './Button.css';
 
 function Button({ content = '', classes = '', click = (event) => {} }) {

@@ -2,17 +2,17 @@
   "name": "flappy",
   "version": "1.0.0",
   "description": "A simple flappy bird",
-  "scripts": {},
+  "homepage": "https://github.com/arthurfiorette/code-vault#readme",
+  "bugs": {
+    "url": "https://github.com/arthurfiorette/code-vault/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/arthurfiorette/code-vault.git"
   },
-  "author": "Hazork",
   "license": "GPL-3.0-only",
-  "bugs": {
-    "url": "https://github.com/arthurfiorette/code-vault/issues"
-  },
-  "homepage": "https://github.com/arthurfiorette/code-vault#readme",
+  "author": "Hazork",
+  "scripts": {},
   "dependencies": {
     "typescript": "^4.1.3"
   }

@@ -2,16 +2,16 @@
   "name": "email_sender-app",
   "version": "1.0.0",
   "description": "The code to send the emails",
-  "main": "app.js",
-  "scripts": {
-    "start": "node app.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/arthurfiorette/code-vault.git"
   },
-  "author": "Hazork",
   "license": "GPL-3.0-only",
+  "author": "Hazork",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
     "express": "4.17.1",
     "pg": "8.5.1",

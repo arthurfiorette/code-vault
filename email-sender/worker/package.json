@@ -2,16 +2,16 @@
   "name": "email_sender-worker",
   "version": "1.0.0",
   "description": "The code to send the emails",
-  "main": "worker.js",
-  "scripts": {
-    "start": "node worker.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://arthurfiorette/code-vault.git"
   },
-  "author": "Hazork",
   "license": "GPL-3.0-only",
+  "author": "Hazork",
+  "main": "worker.js",
+  "scripts": {
+    "start": "node worker.js"
+  },
   "dependencies": {
     "redis": "3.0.2"
   }

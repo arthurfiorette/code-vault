@@ -1,25 +1,6 @@
 {
-  "author": "Arthur Fiorette",
   "name": "field-verifier",
   "version": "1.1.1",
-  "license": "MIT",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
-  "scripts": {
-    "build": "npm run build:js && npm run build:types",
-    "build:types": "tsc --project tsconfig.build.json",
-    "build:js": "babel src --out-dir dist --extensions \".ts\"",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "lint": "eslint . --ext .ts",
-    "lint:fix": "eslint . --ext .ts",
-    "prettify": "prettier . --write"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ArthurFiorette/field-verifier.git"
-  },
   "keywords": [
     "verifier",
     "object",
@@ -28,10 +9,29 @@
     "matcher",
     "checker"
   ],
+  "homepage": "https://github.com/ArthurFiorette/field-verifier#readme",
   "bugs": {
     "url": "https://github.com/ArthurFiorette/field-verifier/issues"
   },
-  "homepage": "https://github.com/ArthurFiorette/field-verifier#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArthurFiorette/field-verifier.git"
+  },
+  "license": "MIT",
+  "author": "Arthur Fiorette",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "npm run build:js && npm run build:types",
+    "build:js": "babel src --out-dir dist --extensions \".ts\"",
+    "build:types": "tsc --project tsconfig.build.json",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts",
+    "prettify": "prettier . --write",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
   "devDependencies": {
     "@babel/cli": "^7.13.16",
     "@babel/core": "^7.14.0",
